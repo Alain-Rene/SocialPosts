@@ -1,4 +1,5 @@
 # SocialPosts
+This project is a simple social posting app where users can share their thoughts. It has three main parts: a section that shows all posts, an area where each post is displayed individually, and a form to create new posts. You can easily add new posts, hide or show the form with a button, and all your posts will appear in a list. It’s designed to be straightforward and user-friendly, making it quick to share ideas!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
 

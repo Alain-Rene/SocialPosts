@@ -1,0 +1,21 @@
+<div>
+    @if(display == true){
+        <label for="title">Please title your post:</label>
+        <br>
+        <input [(ngModel)]="formPost.title" placeholder="Enter Title">
+        <br>
+        <br>
+        <label for="thought">Write the content of your post here!</label>
+        <br>
+        <input [(ngModel)]="formPost.thought" placeholder="Enter content">
+        <br>
+        <button class="Add" (click)="EmitCreated()">Add Post</button>
+    }
+    
+</div>
+@if (display == false){
+    <button class="Add" (click)="toggleDisplay()">Add Post</button>
+}
+@else {
+    <button class="btn btn-danger" (click)="toggleDisplay()">Return</button>
+}
