@@ -1,9 +1,8 @@
 <body>
-    <div class="container"></div>
     <h1>Tech Gram</h1>
     <!-- <h1>The PS5 Pro is $700</h1> -->
     @for (p of AllPosts; track $index){
-        <app-single-post [DisplayPost]="p"></app-single-post>
+        <app-single-post (Deleted)="DeletePost($event)" [DisplayPost]="p"></app-single-post>
     }
     <app-post-form (PostCreated)="onSubmit($event)"></app-post-form>
 </body>

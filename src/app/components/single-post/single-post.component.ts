@@ -13,7 +13,13 @@ export class SinglePostComponent {
 
   @Output() PostInfo = new EventEmitter<Post>();
 
+  @Output() Deleted = new EventEmitter<Post>();
+
   EmitPost(){
     this.PostInfo.emit(this.DisplayPost);
+  }
+
+  EmitDelete(){
+    this.Deleted.emit(this.DisplayPost)
   }
 }

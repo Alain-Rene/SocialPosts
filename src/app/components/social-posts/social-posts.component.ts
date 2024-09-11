@@ -41,4 +41,9 @@ export class SocialPostsComponent {
   onSubmit(newPost: Post){
     this.AllPosts.unshift(newPost);
   }
+
+  DeletePost(i:Post){
+    let index:number = this.AllPosts.findIndex(x => x === i);
+    this.AllPosts.splice(index, 1);
+  }
 }
